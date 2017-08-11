@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="Home.aspx" title="Начало"  description="" resourceKey="HomePage" >
+          <siteMapNode url="DetailsProduct.aspx" title="Детайли"  description="" resourceKey="DetailsProductPage" />
+          <siteMapNode url="DetailsCategory.aspx" title="Категории продукти"  description="" resourceKey="DetailsCategoryPage" />
+        </siteMapNode>
+        <siteMapNode url="Services.aspx" title="Услуги"  description="" resourceKey="ServicesPage" />
+        <siteMapNode url="For_us.aspx" title="За нас"  description="" resourceKey="For_usPage" />
+        
+        <siteMapNode url="Cart.aspx" title="Количка"  description="" resourceKey="CartPage" />
+        <siteMapNode url="UserHistory.aspx" title="История на поръчката"  description="" resourceKey="UserHistoryPage" />
+        <siteMapNode url="UserProfil.aspx" title="Моят профил"  description="" resourceKey="UserProfilPage" />
+        <siteMapNode url="SiteMap.aspx" title="Карта на сайта"  description="Карта на сайта" resourceKey="SiteMapPage" />
+        <siteMapNode url="Contacts.aspx" title="Контакти"  description="" resourceKey="ContactsPage" />
+
+      <!--<siteMapNode url="Artikuli.aspx" title="Мебели"  description="">
+        
+            <siteMapNode url="WardrobesComplect.aspx" title="Гардероби"  description="" >
+              <siteMapNode url="UpgradesWardrobes.aspx" title="Надстройки"  description="" />
+              <siteMapNode url="Wardrobes.aspx" title="Гардероби"  description="" />
+            </siteMapNode>
+        
+            <siteMapNode url="Sofas.aspx" title="Мека мебел"  description="" >
+              <siteMapNode url="bedroomSet.aspx" title="Спални"  description="" />
+              <siteMapNode url="SectionalSofa.aspx" title="Ъглови дивани"  description="" />
+              <siteMapNode url="Couch.aspx" title="Канапета"  description="" />
+            </siteMapNode>
+        
+            <siteMapNode url="Tables.aspx" title="Маси"  description="" >
+              <siteMapNode url="Coffee Tables.aspx" title="Холни маси"  description="" />
+              <siteMapNode url="DiningTables.aspx" title="Трапезни маси"  description="" />
+              --><!--<siteMapNode url="DetailsCategory.aspx" title="Холни маси"  description="" />
+              <siteMapNode url="DetailsCategory.aspx" title="Трапезни маси"  description="" /> --><!--
+           </siteMapNode>
+        
+              <siteMapNode url="Sections.aspx" title="Секции"  description="" />
+      
+      </siteMapNode>-->
+      
+      
+        <!--<siteMapNode url="WardrobesComplect.aspx" title=""  description="" />-->
+    </siteMapNode>
+  
+       
+</siteMap>

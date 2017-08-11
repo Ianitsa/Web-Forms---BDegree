@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="IaniDProject.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>On-line Shop</title>
+    <link href="StyleSheet1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+ <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+ 
+
+<div class="row">
+ <div class="col-head col-m-head col-mob-head">
+     <%--Head--%>
+     <img alt="" src="img/logo.GIF" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <span>
+     <%--<asp:Label ID="LblSearch" runat="server" Text="Търси"></asp:Label>
+            &nbsp;&nbsp;
+
+            <asp:TextBox ID="txtSearch" runat="server" Width="167px"></asp:TextBox>
+            &nbsp;<asp:ImageButton ID="ImgBtnSearch" runat="server" Height="30px" ImageUrl="~/img/search.JPG" OnClick="ImgBtnSearch_Click" Width="28px" />--%>&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="40px" ImageUrl="~/img/car.JPG" Width="41px" OnClick="ImageButton1_Click" meta:resourcekey="ImageButton1Resource1" />
+         <asp:Label ID="lblCartCount" runat="server" Text="0" meta:resourcekey="lblCartCountResource1"></asp:Label>
+     
+    </span>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>
+    <asp:ImageButton ID="ImgBtnBG" runat="server" ImageUrl="~/img/BG.JPG" Height="40px" Width="45px" meta:resourcekey="ImageBG1Resource1" OnClick="ImgBtnBG_Click" />
+     <%--<asp:Image ID="ImgBG" runat="server" ImageUrl="~/img/BG.JPG" Height="40px" Width="45px" meta:resourcekey="Image1Resource1" />--%>
+    &nbsp;
+    <asp:ImageButton ID="ImgBtnUS" runat="server" ImageUrl="~/img/EN.JPG" Height="40px" Width="45px" meta:resourcekey="ImageUS2Resource1" OnClick="ImgBtnUS_Click"/>
+    <%--<asp:Image ID="ImgUS" runat="server" ImageUrl="~/img/EN.JPG" Height="40px" Width="45px" meta:resourcekey="Image2Resource1"/>--%>
+    <br />
+     <br />
+</span>
+ </div>
+  <div class="col-login col-m-login col-mob-login">
+      <asp:LoginView ID="LoginView1" runat="server">
+          <AnonymousTemplate>
+              <asp:Login ID="Login1" runat="server" meta:resourcekey="Login1Resource1">
+              </asp:Login>
+              <asp:PasswordRecovery ID="PasswordRecovery1" runat="server" Visible="False" meta:resourcekey="PasswordRecovery1Resource1">
+              </asp:PasswordRecovery>
+              <asp:LinkButton ID="LBtnforgetPass" runat="server" OnClick="LBtnforgetPass_Click" meta:resourcekey="LBtnforgetPassResource1">Збравена парола</asp:LinkButton>
+              <br />
+              <br />
+          </AnonymousTemplate>
+          <LoggedInTemplate>
+              <asp:LoginName ID="LoginName2" runat="server" meta:resourcekey="LoginName2Resource1" />
+              <asp:LoginStatus ID="LoginStatus1" runat="server" meta:resourcekey="LoginStatus1Resource1" />
+          </LoggedInTemplate>
+          <RoleGroups>
+              <asp:RoleGroup Roles="Admin">
+                  <ContentTemplate>
+                      <asp:LoginName ID="LoginName1" runat="server" meta:resourcekey="LoginName1Resource1" />
+                      <br />
+                      <asp:LoginStatus ID="LoginStatusAdmin" runat="server" meta:resourcekey="LoginStatusAdminResource1" />
+                      <br />
+                      <asp:ChangePassword ID="ChangePasswordAdmin" runat="server" Visible="False" meta:resourcekey="ChangePasswordAdminResource1">
+                      </asp:ChangePassword>
+                      <asp:LinkButton ID="LinkBtnChPassAdmin" runat="server" OnClick="LinkBtnChPassAdmin_Click" meta:resourcekey="LinkBtnChPassAdminResource1">Смяна на паролата</asp:LinkButton>
+                      <br />
+                      <asp:LinkButton ID="LBtnCreateUser" runat="server" meta:resourcekey="LBtnCreateUserResource1">Създаване на потребител</asp:LinkButton>
+                      <br />
+                      <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" meta:resourcekey="CreateUserWizard1Resource1">
+                          <WizardSteps>
+                              <asp:CreateUserWizardStep runat="server" meta:resourcekey="CreateUserWizardStepResource1" />
+                              <asp:CompleteWizardStep runat="server" meta:resourcekey="CompleteWizardStepResource1" />
+                          </WizardSteps>
+                      </asp:CreateUserWizard>
+                      <br />
+                  </ContentTemplate>
+              </asp:RoleGroup>
+              <asp:RoleGroup Roles="User">
+                  <ContentTemplate>
+                      <asp:LoginName ID="LoginNameUser" runat="server" meta:resourcekey="LoginNameUserResource1" />
+                      <br />
+                      <asp:LoginStatus ID="LoginStatusUser" runat="server" meta:resourcekey="LoginStatusUserResource1" />
+                      <br />
+                      <asp:ChangePassword ID="ChangePasswordUser" runat="server" Visible="False" meta:resourcekey="ChangePasswordUserResource1">
+                      </asp:ChangePassword>
+                      <asp:LinkButton ID="LBtnChPassUser" runat="server" OnClick="LBtnChPassUser_Click" meta:resourcekey="LBtnChPassUserResource1">Смяна на паролата</asp:LinkButton>
+                      <br />
+                      <br />
+                  </ContentTemplate>
+              </asp:RoleGroup>
+          </RoleGroups>
+      </asp:LoginView>
+      <br />
+      <br />
+      <%--Login--%>
+
+      
+      <br />
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-topNav col-m-topNav col-mob-topNav">
+     <%--TopNav--%>
+     <asp:Menu ID="Menu2" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" meta:resourcekey="Menu2Resource1">
+     </asp:Menu>
+     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+     <br />
+     <asp:SiteMapPath ID="SiteMapPath1" runat="server" meta:resourcekey="SiteMapPath1Resource1">
+     </asp:SiteMapPath>
+     <br />
+    </div>
+
+</div>
+
+<div class="menu">
+   <div class="row">
+    <div class="col-nav col-m-nav col-mob-nav"><%--Nav--%>
+
+
+        <asp:Menu ID="Menu3" runat="server" StaticDisplayLevels="2" OnMenuItemClick="Menu3_MenuItemClick" meta:resourcekey="Menu3Resource1">
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" StartingNodeUrl="~/Artikuli.aspx" />
+
+
+    </div>
+   </div>
+    <div class="row">
+
+
+
+    <div class="col-nav col-m-nav col-mob-nav"><%--Nav--%><br />
+        <asp:TreeView ID="TreeView1" runat="server" ShowExpandCollapse="False" ImageSet="Arrows" NodeWrap="True" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged" meta:resourcekey="TreeView1Resource1">
+            <HoverNodeStyle Font-Underline="True" ForeColor="#006600" BackColor="#99CCFF" />
+            <LeafNodeStyle BackColor="Fuchsia" />
+            <Nodes>
+                <asp:TreeNode Checked="True" Text="Мебели" Value="Furniture" meta:resourcekey="TreeNodeResource13">
+                    <asp:TreeNode Checked="True" Text="Маси" Value="2000" SelectAction="None" meta:resourcekey="TreeNodeResource3">
+                        <asp:TreeNode Checked="True" Text="Холни маси" Value="301" meta:resourcekey="TreeNodeResource1"></asp:TreeNode>
+                        <asp:TreeNode Checked="True" Text="Трапезни маси" Value="401" meta:resourcekey="TreeNodeResource2"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Гардероби" Value="1000" SelectAction="None" meta:resourcekey="TreeNodeResource6">
+                        <asp:TreeNode Checked="True" Text="Гардероби" Value="501" meta:resourcekey="TreeNodeResource4"></asp:TreeNode>
+                        <asp:TreeNode Checked="True" Text="Надстройки" Value="601" meta:resourcekey="TreeNodeResource5"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Checked="True" Text="Мека мебел" Value="3000" SelectAction="None" meta:resourcekey="TreeNodeResource10">
+                        <asp:TreeNode Checked="True" Text="Ъглови дивани" Value="701" meta:resourcekey="TreeNodeResource7"></asp:TreeNode>
+                        <asp:TreeNode Checked="True" Text="Дивани" Value="201" meta:resourcekey="TreeNodeResource8"></asp:TreeNode>
+                        <asp:TreeNode Text="Спални" Value="101" meta:resourcekey="TreeNodeResource9"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Секции" Value="4000" SelectAction="None" meta:resourcekey="TreeNodeResource12">
+                        <asp:TreeNode Checked="True"  Text="Секции" Value="801" meta:resourcekey="TreeNodeResource11"></asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="3px" NodeSpacing="2px" VerticalPadding="2px" BackColor="#FF99CC" Width="100%" />
+            <ParentNodeStyle Font-Bold="False" Font-Italic="False" NodeSpacing="0px" />
+            <RootNodeStyle Font-Bold="True" />
+            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+        </asp:TreeView>
+        </div>
+   </div>
+
+
+    <div class="row">
+    <div class="col-nav col-m-nav col-mob-nav"></div>
+   </div>
+
+    <div class="row">
+    <div class="col-nav col-m-nav col-mob-nav"><%--Nav--%><br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+   </div>
+     
+</div>
+<div class="main">
+    <div class="col-content col-m-content col-mob-content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <p>
+            
+        </p>
+        <p>
+        </p>
+        </asp:ContentPlaceHolder>
+    </div><%--<div class="col-4 col-m-4">...</div>
+    <div class="col-14 col-m-14">...</div>
+    <div class="col-4 col-m-4">...</div>
+    <div class="col-14 col-m-14">col</div>
+    <div class="col-4 col-m-4">...</div>
+    <div class="col-14 col-m-14">...</div>
+    <div class="col-4 col-m-4">...</div>
+    <div class="col-14 col-m-14">...</div>--%>
+</div>
+        <div class="row">
+ <div class="col-footer col-m-footer col-mob-footer"><%--footer--%>&nbsp;&nbsp;
+     <%--&nbsp;&nbsp;&nbsp;--%>
+            <asp:LinkButton ID="LinkBtnTermsOfUse" runat="server" OnClick="LinkBtnTermsOfUse_Click" meta:resourcekey="LinkBtnTermsOfUseResource1">Oбщи условия</asp:LinkButton>
+         &nbsp;&nbsp;&nbsp;
+     <asp:LinkButton ID="LinkBtnContacts" runat="server" OnClick="LinkBtnContacts_Click" meta:resourcekey="LinkBtnContactsResource1">Контакти</asp:LinkButton>
+     &nbsp;&nbsp;&nbsp;
+     <asp:LinkButton ID="LinkBtnServices" runat="server" OnClick="LinkBtnServices_Click" meta:resourcekey="LinkBtnServicesResource1">Услуги</asp:LinkButton>
+     &nbsp;&nbsp;&nbsp; 
+     <asp:LinkButton ID="LBtnHome" runat="server" OnClick="LBtnHome_Click" meta:resourcekey="LBtnHomeResource1">Начало</asp:LinkButton>  
+     <br />
+ </div>
+</div>
+
+    </form>
+</body>
+</html>
