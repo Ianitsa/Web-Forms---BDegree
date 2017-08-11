@@ -1,0 +1,14 @@
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\bin\IaniDProject.dll.config
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\bin\IaniDProject.dll
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\bin\IaniDProject.pdb
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\obj\Debug\IaniDProject.csprojResolveAssemblyReference.cache
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\obj\Debug\IaniDProject.dll
+C:\Users\inf2065_usr\Desktop\Iani\diplomenProect\DProject\DProject\IaniDProject\obj\Debug\IaniDProject.pdb
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\bin\IaniDProject.dll.config
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\bin\IaniDProject.dll
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\bin\IaniDProject.pdb
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\obj\Debug\IaniDProject.dll
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\obj\Debug\IaniDProject.pdb
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\obj\Debug\IaniDProject.csprojResolveAssemblyReference.cache
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\obj\Debug\IaniDProject.App_GlobalResources.Web.sitemap.resources
+E:\UNSS1\8 семестър\diplomenProect\DProject\IaniDProject\obj\Debug\IaniDProject.csproj.GenerateResource.Cache

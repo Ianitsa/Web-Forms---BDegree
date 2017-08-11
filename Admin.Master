@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="IaniDProject.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>On-line Shop Admin</title>
+
+    <link href="StyleSheetAdmin.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+<div class="Login">
+
+    <asp:LoginView ID="LoginView1" runat="server">
+          <AnonymousTemplate>
+              <asp:Login ID="Login1" runat="server" meta:resourcekey="Login1Resource1">
+              </asp:Login>
+              <asp:PasswordRecovery ID="PasswordRecovery1" runat="server" Visible="False" meta:resourcekey="PasswordRecovery1Resource1">
+              </asp:PasswordRecovery>
+              <asp:LinkButton ID="LBtnforgetPass" runat="server" meta:resourcekey="LBtnforgetPassResource1">Збравена парола</asp:LinkButton>
+              <br />
+              <br />
+          </AnonymousTemplate>
+          <LoggedInTemplate>
+              <asp:LoginName ID="LoginName2" runat="server" meta:resourcekey="LoginName2Resource1" />
+              <asp:LoginStatus ID="LoginStatus1" runat="server" meta:resourcekey="LoginStatus1Resource1" />
+          </LoggedInTemplate>
+          <RoleGroups>
+              <asp:RoleGroup Roles="Admin">
+                  <ContentTemplate>
+                      <asp:LoginName ID="LoginName1" runat="server" meta:resourcekey="LoginName1Resource1" />
+                      <br />
+                      <asp:LoginStatus ID="LoginStatusAdmin" runat="server" meta:resourcekey="LoginStatusAdminResource1" />
+                      <br />
+                      <asp:ChangePassword ID="ChangePasswordAdmin" runat="server" Visible="False" meta:resourcekey="ChangePasswordAdminResource1">
+                      </asp:ChangePassword>
+                      <asp:LinkButton ID="LinkBtnChPassAdmin" runat="server"  meta:resourcekey="LinkBtnChPassAdminResource1">Смяна на паролата</asp:LinkButton>
+                      <br />
+                      <asp:LinkButton ID="LBtnCreateUser" runat="server" meta:resourcekey="LBtnCreateUserResource1">Създаване на потребител</asp:LinkButton>
+                      <br />
+                      <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" meta:resourcekey="CreateUserWizard1Resource1">
+                          <WizardSteps>
+                              <asp:CreateUserWizardStep runat="server" meta:resourcekey="CreateUserWizardStepResource1" />
+                              <asp:CompleteWizardStep runat="server" meta:resourcekey="CompleteWizardStepResource1" />
+                          </WizardSteps>
+                      </asp:CreateUserWizard>
+                      <br />
+                  </ContentTemplate>
+              </asp:RoleGroup>
+              <asp:RoleGroup Roles="User">
+                  <ContentTemplate>
+                      <asp:LoginName ID="LoginNameUser" runat="server" meta:resourcekey="LoginNameUserResource1" />
+                      <br />
+                      <asp:LoginStatus ID="LoginStatusUser" runat="server" meta:resourcekey="LoginStatusUserResource1" />
+                      <br />
+                      <asp:ChangePassword ID="ChangePasswordUser" runat="server" Visible="False" meta:resourcekey="ChangePasswordUserResource1">
+                      </asp:ChangePassword>
+                      <asp:LinkButton ID="LBtnChPassUser" runat="server" meta:resourcekey="LBtnChPassUserResource1">Смяна на паролата</asp:LinkButton>
+                      <br />
+                      <br />
+                  </ContentTemplate>
+              </asp:RoleGroup>
+          </RoleGroups>
+      </asp:LoginView>
+      <br />
+      <br />
+     <%--Login--%>
+
+      
+      <br />
+    </div>
+
+<div class="Menu">
+
+
+    
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+
+    
+    <br />
+     <br />
+    
+    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+    </asp:SiteMapPath>
+    <br />
+
+
+    <br />
+    <asp:Button ID="BtnPageProduct" runat="server" OnClick="BtnPageProduct_Click" Text="Продукти" />
+    <asp:Button ID="BtnPageMf" runat="server" OnClick="BtnPageMf_Click" Text="Производител" />
+    <asp:Button ID="btnPageCategory" runat="server" OnClick="btnPageCategory_Click" Text="Категории" />
+    <asp:Button ID="BtnPageGallery" runat="server" OnClick="BtnPageGallery_Click" Text="Галерия" />
+    <asp:Button ID="btnPagePicture" runat="server" OnClick="btnPagePicture_Click" Text="Снимки" />
+    <asp:Button ID="btnPageOffer" runat="server" Text="Оферти" OnClick="btnPageOffer_Click" />
+
+
+</div>
+
+<div class="Conteiner">
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <p>
+            <br />
+        </p>
+    </asp:ContentPlaceHolder>
+
+
+
+</div>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

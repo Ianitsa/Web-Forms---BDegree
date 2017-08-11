@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangePasswordAdminResource1.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ChangePasswordButtonText" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ChangePasswordFailureText" xml:space="preserve">
+    <value>Password incorrect or New Password invalid. New Password length minimum: {0}. Non-alphanumeric characters required: {1}.</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ChangePasswordTitleText" xml:space="preserve">
+    <value>Change Your Password</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ConfirmNewPasswordLabelText" xml:space="preserve">
+    <value>Confirm New Password:</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ConfirmPasswordCompareErrorMessage" xml:space="preserve">
+    <value>The Confirm New Password must match the New Password entry.</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ConfirmPasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Confirm New Password is required.</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ContinueButtonText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.CreateUserText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.EditProfileText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.InstructionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.NewPasswordLabelText" xml:space="preserve">
+    <value>New Password:</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.NewPasswordRequiredErrorMessage" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.PasswordHintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.PasswordLabelText" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.PasswordRecoveryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.PasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.SuccessText" xml:space="preserve">
+    <value>Your password has been changed!</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.SuccessTitleText" xml:space="preserve">
+    <value>Change Password Complete</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordAdminResource1.UserNameLabelText" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="ChangePasswordAdminResource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ChangePasswordButtonText" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ChangePasswordFailureText" xml:space="preserve">
+    <value>Password incorrect or New Password invalid. New Password length minimum: {0}. Non-alphanumeric characters required: {1}.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ChangePasswordTitleText" xml:space="preserve">
+    <value>Change Your Password</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ConfirmNewPasswordLabelText" xml:space="preserve">
+    <value>Confirm New Password:</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ConfirmPasswordCompareErrorMessage" xml:space="preserve">
+    <value>The Confirm New Password must match the New Password entry.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ConfirmPasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Confirm New Password is required.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ContinueButtonText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ChangePasswordUserResource1.CreateUserText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.EditProfileText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.InstructionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.NewPasswordLabelText" xml:space="preserve">
+    <value>New Password:</value>
+  </data>
+  <data name="ChangePasswordUserResource1.NewPasswordRequiredErrorMessage" xml:space="preserve">
+    <value>New Password is required.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.PasswordHintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.PasswordLabelText" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="ChangePasswordUserResource1.PasswordRecoveryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.PasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="ChangePasswordUserResource1.SuccessText" xml:space="preserve">
+    <value>Your password has been changed!</value>
+  </data>
+  <data name="ChangePasswordUserResource1.SuccessTitleText" xml:space="preserve">
+    <value>Change Password Complete</value>
+  </data>
+  <data name="ChangePasswordUserResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswordUserResource1.UserNameLabelText" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="ChangePasswordUserResource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="CompleteWizardStepResource1.Title" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.Answer" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.AnswerLabelText" xml:space="preserve">
+    <value>Security Answer:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.AnswerRequiredErrorMessage" xml:space="preserve">
+    <value>Security answer is required.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.CompleteSuccessText" xml:space="preserve">
+    <value>Your account has been successfully created.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.ConfirmPasswordCompareErrorMessage" xml:space="preserve">
+    <value>The Password and Confirmation Password must match.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.ConfirmPasswordLabelText" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.ConfirmPasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Confirm Password is required.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.ContinueButtonText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.CreateUserButtonText" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.DuplicateEmailErrorMessage" xml:space="preserve">
+    <value>The e-mail address that you entered is already in use. Please enter a different e-mail address.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.DuplicateUserNameErrorMessage" xml:space="preserve">
+    <value>Please enter a different user name.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.EditProfileText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.EmailLabelText" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.EmailRequiredErrorMessage" xml:space="preserve">
+    <value>E-mail is required.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.FinishCompleteButtonText" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.FinishPreviousButtonText" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.InstructionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.InvalidAnswerErrorMessage" xml:space="preserve">
+    <value>Please enter a different security answer.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.InvalidEmailErrorMessage" xml:space="preserve">
+    <value>Please enter a valid e-mail address.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.InvalidPasswordErrorMessage" xml:space="preserve">
+    <value>Password length minimum: {0}. Non-alphanumeric characters required: {1}.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.InvalidQuestionErrorMessage" xml:space="preserve">
+    <value>Please enter a different security question.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.PasswordHintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.PasswordLabelText" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.PasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.Question" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.QuestionLabelText" xml:space="preserve">
+    <value>Security Question:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.QuestionRequiredErrorMessage" xml:space="preserve">
+    <value>Security question is required.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.SkipLinkText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.StartNextButtonText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.StepNextButtonText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.StepPreviousButtonText" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CreateUserWizard1Resource1.UnknownErrorMessage" xml:space="preserve">
+    <value>Your account was not created. Please try again.</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.UserNameLabelText" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="CreateUserWizard1Resource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="CreateUserWizardStepResource1.Title" xml:space="preserve">
+    <value>Sign Up for Your New Account</value>
+  </data>
+  <data name="Image1Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image2Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Image2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImageButton1Resource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImageButton1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCartCountResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCartCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LBtnChPassUserResource1.Text" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LBtnChPassUserResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LBtnCreateUserResource1.Text" xml:space="preserve">
+    <value>Create user</value>
+  </data>
+  <data name="LBtnCreateUserResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LBtnforgetPassResource1.Text" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="LBtnforgetPassResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LBtnHomeResource1.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="LBtnHomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkBtnChPassAdminResource1.Text" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LinkBtnChPassAdminResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkBtnContactsResource1.Text" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="LinkBtnContactsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkBtnServicesResource1.Text" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="LinkBtnServicesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkBtnTermsOfUseResource1.Text" xml:space="preserve">
+    <value>Term of use</value>
+  </data>
+  <data name="LinkBtnTermsOfUseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.CreateUserText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.FailureText" xml:space="preserve">
+    <value>Your login attempt was not successful. Please try again.</value>
+  </data>
+  <data name="Login1Resource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.InstructionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.LoginButtonText" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Login1Resource1.PasswordLabelText" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Login1Resource1.PasswordRecoveryText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.PasswordRequiredErrorMessage" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="Login1Resource1.RememberMeText" xml:space="preserve">
+    <value>Remember me next time.</value>
+  </data>
+  <data name="Login1Resource1.TitleText" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Login1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Login1Resource1.UserNameLabelText" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="Login1Resource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="LoginName1Resource1.FormatString" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="LoginName1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginName2Resource1.FormatString" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="LoginName2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginNameUserResource1.FormatString" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="LoginNameUserResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginStatus1Resource1.LoginText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginStatus1Resource1.LogoutText" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LoginStatus1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginStatusAdminResource1.LoginText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginStatusAdminResource1.LogoutText" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LoginStatusAdminResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LoginStatusUserResource1.LoginText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginStatusUserResource1.LogoutText" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LoginStatusUserResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu2Resource1.ScrollDownText" xml:space="preserve">
+    <value>Scroll down</value>
+  </data>
+  <data name="Menu2Resource1.ScrollUpText" xml:space="preserve">
+    <value>Scroll up</value>
+  </data>
+  <data name="Menu2Resource1.SkipLinkText" xml:space="preserve">
+    <value>Skip Navigation Links</value>
+  </data>
+  <data name="Menu2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu3Resource1.ScrollDownText" xml:space="preserve">
+    <value>Scroll down</value>
+  </data>
+  <data name="Menu3Resource1.ScrollUpText" xml:space="preserve">
+    <value>Scroll up</value>
+  </data>
+  <data name="Menu3Resource1.SkipLinkText" xml:space="preserve">
+    <value>Skip Navigation Links</value>
+  </data>
+  <data name="Menu3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordRecovery1Resource1.AnswerLabelText" xml:space="preserve">
+    <value>Answer:</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.AnswerRequiredErrorMessage" xml:space="preserve">
+    <value>Answer is required.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.GeneralFailureText" xml:space="preserve">
+    <value>Your attempt to retrieve your password was not successful. Please try again.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.HelpPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordRecovery1Resource1.QuestionFailureText" xml:space="preserve">
+    <value>Your answer could not be verified. Please try again.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.QuestionInstructionText" xml:space="preserve">
+    <value>Answer the following question to receive your password.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.QuestionLabelText" xml:space="preserve">
+    <value>Question:</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.QuestionTitleText" xml:space="preserve">
+    <value>Identity Confirmation</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.SubmitButtonText" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.SuccessText" xml:space="preserve">
+    <value>Your password has been sent to you.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordRecovery1Resource1.UserName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordRecovery1Resource1.UserNameFailureText" xml:space="preserve">
+    <value>We were unable to access your information. Please try again.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.UserNameInstructionText" xml:space="preserve">
+    <value>Enter your User Name to receive your password.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.UserNameLabelText" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.UserNameRequiredErrorMessage" xml:space="preserve">
+    <value>User Name is required.</value>
+  </data>
+  <data name="PasswordRecovery1Resource1.UserNameTitleText" xml:space="preserve">
+    <value>Forgot Your Password?</value>
+  </data>
+  <data name="SiteMapPath1Resource1.PathSeparator" xml:space="preserve">
+    <value> &gt; </value>
+  </data>
+  <data name="SiteMapPath1Resource1.SkipLinkText" xml:space="preserve">
+    <value>Skip Navigation Links</value>
+  </data>
+  <data name="SiteMapPath1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource1.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource1.Text" xml:space="preserve">
+    <value>Dining Table</value>
+  </data>
+  <data name="TreeNodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource1.Value" xml:space="preserve">
+    <value>301</value>
+  </data>
+  <data name="TreeNodeResource10.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource10.Text" xml:space="preserve">
+    <value>Sofas</value>
+  </data>
+  <data name="TreeNodeResource10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource10.Value" xml:space="preserve">
+    <value>3000</value>
+  </data>
+  <data name="TreeNodeResource11.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource11.Text" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="TreeNodeResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource11.Value" xml:space="preserve">
+    <value>801</value>
+  </data>
+  <data name="TreeNodeResource12.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource12.Text" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="TreeNodeResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource12.Value" xml:space="preserve">
+    <value>4000</value>
+  </data>
+  <data name="TreeNodeResource13.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource13.Text" xml:space="preserve">
+    <value>Furniture</value>
+  </data>
+  <data name="TreeNodeResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource13.Value" xml:space="preserve">
+    <value>Furniture</value>
+  </data>
+  <data name="TreeNodeResource2.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource2.Text" xml:space="preserve">
+    <value>Coffe Table</value>
+  </data>
+  <data name="TreeNodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource2.Value" xml:space="preserve">
+    <value>401</value>
+  </data>
+  <data name="TreeNodeResource3.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource3.Text" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="TreeNodeResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource3.Value" xml:space="preserve">
+    <value>2000</value>
+  </data>
+  <data name="TreeNodeResource4.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource4.Text" xml:space="preserve">
+    <value>Warderobs</value>
+  </data>
+  <data name="TreeNodeResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource4.Value" xml:space="preserve">
+    <value>501</value>
+  </data>
+  <data name="TreeNodeResource5.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource5.Text" xml:space="preserve">
+    <value>Ubgrade Warderobs</value>
+  </data>
+  <data name="TreeNodeResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource5.Value" xml:space="preserve">
+    <value>601</value>
+  </data>
+  <data name="TreeNodeResource6.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource6.Text" xml:space="preserve">
+    <value>Warderobs</value>
+  </data>
+  <data name="TreeNodeResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource6.Value" xml:space="preserve">
+    <value>1000</value>
+  </data>
+  <data name="TreeNodeResource7.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource7.Text" xml:space="preserve">
+    <value>Sectional Soffas</value>
+  </data>
+  <data name="TreeNodeResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource7.Value" xml:space="preserve">
+    <value>701</value>
+  </data>
+  <data name="TreeNodeResource8.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource8.Text" xml:space="preserve">
+    <value>Couch</value>
+  </data>
+  <data name="TreeNodeResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource8.Value" xml:space="preserve">
+    <value>201</value>
+  </data>
+  <data name="TreeNodeResource9.ImageToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource9.Text" xml:space="preserve">
+    <value>Bedroom set</value>
+  </data>
+  <data name="TreeNodeResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TreeNodeResource9.Value" xml:space="preserve">
+    <value>101</value>
+  </data>
+  <data name="TreeView1Resource1.CollapseImageToolTip" xml:space="preserve">
+    <value>Collapse {0}</value>
+  </data>
+  <data name="TreeView1Resource1.ExpandImageToolTip" xml:space="preserve">
+    <value>Expand {0}</value>
+  </data>
+  <data name="TreeView1Resource1.SkipLinkText" xml:space="preserve">
+    <value>Skip Navigation Links.</value>
+  </data>
+  <data name="TreeView1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>
